@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>القوائم والجداول | CodeStart</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">CodeStart</a>
+
+            <nav>
+                <a href="index.html">الرئيسية</a>
+                <a href="basics.html">أساسيات HTML</a>
+                <a href="links-images.html">الروابط والصور</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="lesson-header">
+            <h1>درس القوائم والجداول في HTML</h1>
+
+            <p>
+                في هذا الدرس سنتعلم كيفية إنشاء القوائم بأنواعها
+                المختلفة، وإنشاء الجداول ودمج الخلايا.
+            </p>
+        </section>
+
+        <section class="lesson-content">
+
+            <h2>أولاً: القوائم غير المرتبة</h2>
+
+            <p>
+                نستخدم العنصر <code>&lt;ul&gt;</code> لإنشاء قائمة
+                غير مرتبة، والعنصر <code>&lt;li&gt;</code> لإنشاء
+                كل عنصر داخل القائمة.
+            </p>
+
+            <h3>مثال عملي</h3>
+
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+
+            <h2>ثانياً: القوائم المرتبة</h2>
+
+            <p>
+                نستخدم العنصر <code>&lt;ol&gt;</code> لإنشاء قائمة
+                مرتبة بالأرقام، ويُستخدم العنصر
+                <code>&lt;li&gt;</code> لكتابة عناصرها.
+            </p>
+
+            <h3>مثال عملي</h3>
+
+            <ol>
+                <li>تعلم أساسيات HTML</li>
+                <li>تعلم CSS</li>
+                <li>تعلم JavaScript</li>
+            </ol>
+
+            <h2>ثالثاً: القوائم المتداخلة</h2>
+
+            <p>
+                القائمة المتداخلة هي قائمة توضع داخل عنصر من عناصر
+                قائمة أخرى، وتساعدنا على تنظيم المعلومات في مستويات.
+            </p>
+
+            <h3>مثال عملي</h3>
+
+            <ul>
+                <li>تطوير الويب
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </li>
+
+                <li>الإحصاء</li>
+            </ul>
+
+            <h2>رابعاً: الجداول في HTML</h2>
+
+            <p>نستخدم العناصر التالية لإنشاء جدول:</p>
+
+            <ul>
+                <li><code>&lt;table&gt;</code>: إنشاء الجدول.</li>
+                <li><code>&lt;tr&gt;</code>: إنشاء صف.</li>
+                <li><code>&lt;th&gt;</code>: إنشاء خلية عنوان.</li>
+                <li><code>&lt;td&gt;</code>: إنشاء خلية بيانات.</li>
+                <li><code>&lt;caption&gt;</code>: إضافة عنوان للجدول.</li>
+            </ul>
+
+            <h3>مثال عملي</h3>
+
+            <div class="table-wrapper">
+
+                <table>
+                    <caption>دروس موقع CodeStart</caption>
+
+                    <thead>
+                        <tr>
+                            <th scope="col">رقم الدرس</th>
+                            <th scope="col">اسم الدرس</th>
+                            <th scope="col">الحالة</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>مقدمة HTML</td>
+                            <td>متاح</td>
+                        </tr>
+
+                        <tr>
+                            <td>2</td>
+                            <td>أساسيات HTML</td>
+                            <td>متاح</td>
+                        </tr>
+
+                        <tr>
+                            <td>3</td>
+                            <td>الروابط والصور</td>
+                            <td>متاح</td>
+                        </tr>
+                    </tbody>
+
+                </table>
+
+            </div>
+
+            <h2>خامساً: دمج الخلايا</h2>
+
+            <p>
+                يمكن استخدام الخاصية
+                <code>colspan</code> لدمج خليتين أو أكثر أفقيًا
+                عبر عدة أعمدة.
+            </p>
+
+            <h3>مثال عملي</h3>
+
+            <div class="table-wrapper">
+
+                <table>
+                    <caption>معلومات الطالب</caption>
+
+                    <tbody>
+                        <tr>
+                            <th colspan="2">بيانات الطالب</th>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">الاسم</th>
+                            <td>أحمد</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">التخصص</th>
+                            <td>علوم الحاسوب</td>
+                        </tr>
+                    </tbody>
+
+                </table>
+
+            </div>
+
+            <h2>اختبر فهمك</h2>
+
+            <div class="quiz-question">
+                <h3>السؤال الأول</h3>
+                <p>ما العنصر المستخدم لإنشاء قائمة غير مرتبة؟</p>
+                <p><strong>الإجابة:</strong> <code>&lt;ul&gt;</code></p>
+            </div>
+
+            <div class="quiz-question">
+                <h3>السؤال الثاني</h3>
+                <p>ما العنصر المستخدم لإنشاء صف في الجدول؟</p>
+                <p><strong>الإجابة:</strong> <code>&lt;tr&gt;</code></p>
+            </div>
+
+            <div class="quiz-question">
+                <h3>السؤال الثالث</h3>
+                <p>ما الفرق بين العنصرين th وtd؟</p>
+                <p>
+                    <strong>الإجابة:</strong>
+                    <code>&lt;th&gt;</code> يُستخدم لخلية العنوان،
+                    أما <code>&lt;td&gt;</code> فيُستخدم لخلية البيانات.
+                </p>
+            </div>
+
+        </section>
+
+        <nav class="lesson-navigation" aria-label="التنقل بين الدروس">
+
+            <a href="links-images.html" class="lesson-button">
+                ← الدرس السابق: الروابط والصور
+            </a>
+
+            <a href="forms.html" class="lesson-button">
+                الدرس التالي: النماذج ←
+            </a>
+
+        </nav>
+
+        <p class="home-link">
+            <a href="index.html">العودة إلى الصفحة الرئيسية</a>
+        </p>
+
+    </main>
+
+    <footer>
+        <p>جميع الحقوق محفوظة &copy; CodeStart</p>
+    </footer>
+
+</body>
+
+</html>

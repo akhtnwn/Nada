@@ -1,0 +1,128 @@
+<!DOCTYPE html><html lang="ar" dir="rtl"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><title>اتصل بنا | CodeStart</title>
+
+<link rel="stylesheet" href="assets/css/style.css">
+
+</head><body><!-- رأس الموقع -->
+<header>
+    <h1>CodeStart</h1>
+    <p>رحلتك لتعلم HTML تبدأ من هنا!</p>
+
+    <!-- قائمة التنقل -->
+    <nav>
+        <a href="index.html">الرئيسية</a>
+        <a href="login.html">تسجيل الدخول</a>
+        <a href="register.html">إنشاء حساب</a>
+        <a href="about.html">عن الموقع</a>
+        <a href="contact.html">اتصل بنا</a>
+    </nav>
+</header>
+
+<!-- المحتوى الرئيسي -->
+<main>
+
+    <section class="contact-container">
+
+        <h1>اتصل بنا 📩</h1>
+
+        <p>
+            هل لديك سؤال أو اقتراح لتطوير موقع CodeStart؟
+            يسعدنا استقبال رسالتك وملاحظاتك.
+            املأ النموذج التالي.
+        </p>
+
+        <hr>
+
+        <h2>نموذج التواصل</h2>
+
+        <form action="#" method="get">
+
+            <label for="name">الاسم الكامل:</label>
+
+            <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="اكتب اسمك الكامل"
+                required
+            >
+
+            <label for="email">البريد الإلكتروني:</label>
+
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="example@email.com"
+                required
+            >
+
+            <label for="subject">موضوع الرسالة:</label>
+
+            <select id="subject" name="subject">
+                <option value="question">استفسار</option>
+                <option value="suggestion">اقتراح</option>
+                <option value="problem">الإبلاغ عن مشكلة</option>
+            </select>
+
+            <label for="message">رسالتك:</label>
+
+            <textarea
+                id="message"
+                name="message"
+                rows="6"
+                placeholder="اكتب رسالتك هنا..."
+                required
+            ></textarea>
+
+            <button type="submit">إرسال الرسالة</button>
+
+            <button type="reset">مسح البيانات</button>
+
+        </form>
+
+    </section>
+
+    <!-- روابط صفحات الموقع -->
+    <section>
+        <h2>صفحات الموقع</h2>
+
+        <ul>
+            <li>
+                <a href="index.html">الصفحة الرئيسية</a>
+            </li>
+
+            <li>
+                <a href="introduction.html">مقدمة HTML</a>
+            </li>
+
+            <li>
+                <a href="exercises.html">التدريبات</a>
+            </li>
+
+            <li>
+                <a href="quiz.html">الاختبار</a>
+            </li>
+
+            <li>
+                <a href="about.html">عن الموقع</a>
+            </li>
+        </ul>
+    </section>
+
+</main>
+
+<!-- تذييل الموقع -->
+<footer>
+    <p>
+        <a href="index.html">الرئيسية</a> |
+        <a href="about.html">عن الموقع</a> |
+        <a href="contact.html">اتصل بنا</a>
+    </p>
+
+    <p>جميع الحقوق محفوظة © CodeStart 2026</p>
+</footer>
+
+</body>
+</html>

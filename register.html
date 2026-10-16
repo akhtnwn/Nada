@@ -1,0 +1,177 @@
+<!DOCTYPE html><html lang="ar" dir="rtl"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><title>إنشاء حساب | CodeStart</title>
+
+<link rel="stylesheet" href="assets/css/style.css">
+
+</head><body><!-- رأس الصفحة -->
+<header>
+    <div class="container">
+        <h1>CodeStart</h1>
+        <p>تعلّم HTML من الصفر خطوة بخطوة</p>
+    </div>
+</header>
+
+<!-- شريط التنقل -->
+<nav>
+    <div class="container">
+        <ul>
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="introduction.html">مقدمة HTML</a></li>
+            <li><a href="contact.html">اتصل بنا</a></li>
+            <li><a href="about.html">عن الموقع</a></li>
+            <li><a href="login.html">تسجيل الدخول</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- المحتوى الرئيسي -->
+<main class="container">
+
+    <section class="lesson-header">
+        <h1>إنشاء حساب جديد</h1>
+        <p>انضمي إلينا وابدئي رحلة تعلم HTML من الصفر!</p>
+    </section>
+
+    <section class="lesson-content">
+
+        <h2>أنشئي حسابك الآن</h2>
+
+        <p>
+            املئي البيانات التالية لإنشاء حسابك التدريبي
+            في موقع CodeStart.
+        </p>
+
+        <form action="#" method="post">
+
+            <label for="fullname">الاسم الكامل:</label>
+            <br>
+
+            <input
+                type="text"
+                id="fullname"
+                name="fullname"
+                placeholder="أدخلي اسمك الكامل"
+                autocomplete="name"
+                required
+            >
+
+            <br><br>
+
+            <label for="username">اسم المستخدم:</label>
+            <br>
+
+            <input
+                type="text"
+                id="username"
+                name="username"
+                placeholder="اختاري اسم مستخدم"
+                autocomplete="username"
+                required
+            >
+
+            <br><br>
+
+            <label for="email">البريد الإلكتروني:</label>
+            <br>
+
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="example@email.com"
+                autocomplete="email"
+                required
+            >
+
+            <br><br>
+
+            <label for="password">كلمة المرور:</label>
+            <br>
+
+            <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="أدخلي كلمة المرور"
+                autocomplete="new-password"
+                required
+            >
+
+            <br><br>
+
+            <label for="confirm-password">تأكيد كلمة المرور:</label>
+            <br>
+
+            <input
+                type="password"
+                id="confirm-password"
+                name="confirm-password"
+                placeholder="أعيدي كتابة كلمة المرور"
+                autocomplete="new-password"
+                required
+            >
+
+            <br><br>
+
+            <label for="specialization">التخصص:</label>
+            <br>
+
+            <select
+                id="specialization"
+                name="specialization"
+                required
+            >
+
+                <option value="">اختاري تخصصك</option>
+                <option value="statistics">الإحصاء</option>
+                <option value="computer-science">علوم الحاسوب</option>
+                <option value="mathematics">الرياضيات</option>
+                <option value="other">تخصص آخر</option>
+
+            </select>
+
+            <br><br>
+
+            <input
+                type="checkbox"
+                id="terms"
+                name="terms"
+                required
+            >
+
+            <label for="terms">
+                أوافق على شروط الاستخدام
+            </label>
+
+            <br><br>
+
+            <button type="submit">إنشاء الحساب</button>
+
+            <button type="reset">مسح البيانات</button>
+
+        </form>
+
+        <hr>
+
+        <p>
+            لديك حساب بالفعل؟
+            <a href="login.html">تسجيل الدخول</a>
+        </p>
+
+        <p>
+            <a href="index.html" class="btn">
+                العودة إلى الصفحة الرئيسية
+            </a>
+        </p>
+
+    </section>
+
+</main>
+
+<!-- تذييل الصفحة -->
+<footer>
+    <p>جميع الحقوق محفوظة &copy; 2026 CodeStart</p>
+</footer>
+
+</body></html>

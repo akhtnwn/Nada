@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>الروابط والصور | CodeStart</title>
+
+    <!-- ربط ملف CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- رأس الموقع -->
+    <header>
+        <h1>CodeStart</h1>
+        <p>رحلتك لتعلم HTML تبدأ من هنا!</p>
+
+        <nav>
+            <a href="index.html">الرئيسية</a>
+            <a href="introduction.html">مقدمة HTML</a>
+            <a href="basics.html">أساسيات HTML</a>
+            <a href="about.html">عن الموقع</a>
+            <a href="contact.html">اتصل بنا</a>
+        </nav>
+    </header>
+
+    <!-- المحتوى الرئيسي -->
+    <main>
+
+        <!-- مقدمة الدرس -->
+        <section>
+            <h2>درس الروابط والصور في HTML</h2>
+
+            <p>
+                سنتعلم في هذا الدرس كيفية إضافة الروابط والصور
+                إلى صفحات الويب.
+            </p>
+        </section>
+
+        <!-- الروابط -->
+        <section>
+            <h2>أولاً: الروابط في HTML</h2>
+
+            <p>
+                نستخدم العنصر <code>&lt;a&gt;</code> لإنشاء رابط ينقل المستخدم
+                إلى صفحة أخرى أو إلى موقع آخر.
+            </p>
+
+            <h3>مثال 1: رابط إلى الصفحة الرئيسية</h3>
+
+            <p>
+                <a href="index.html">العودة إلى الصفحة الرئيسية</a>
+            </p>
+
+            <h3>مثال 2: رابط إلى درس المقدمة</h3>
+
+            <p>
+                <a href="introduction.html">تعلم مقدمة HTML</a>
+            </p>
+
+            <h3>مثال 3: رابط إلى موقع خارجي</h3>
+
+            <p>
+                <a href="https://www.w3schools.com/html/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    تعلم HTML من W3Schools
+                </a>
+            </p>
+
+            <h3>شرح الخاصية href</h3>
+
+            <p>
+                الخاصية <code>href</code> تحدد عنوان الصفحة
+                أو الموقع الذي سينتقل إليه المستخدم عند الضغط على الرابط.
+            </p>
+
+            <pre dir="ltr"><code>&lt;a href="index.html"&gt;
+العودة إلى الصفحة الرئيسية
+&lt;/a&gt;</code></pre>
+        </section>
+
+        <!-- الصور -->
+        <section>
+            <h2>ثانياً: الصور في HTML</h2>
+
+            <p>
+                نستخدم العنصر <code>&lt;img&gt;</code>
+                لإضافة صورة إلى صفحة الويب.
+            </p>
+
+            <h3>مثال على كود الصورة</h3>
+
+            <pre dir="ltr"><code>&lt;img src="images/html.png"
+alt="شعار HTML"&gt;</code></pre>
+
+            <h3>شرح خصائص الصورة</h3>
+
+            <ul>
+                <li>
+                    <code>src</code>:
+                    تحدد مسار الصورة أو عنوانها.
+                </li>
+
+                <li>
+                    <code>alt</code>:
+                    تقدم وصفاً بديلاً للصورة إذا لم تظهر،
+                    وتساعد مستخدمي قارئات الشاشة.
+                </li>
+
+                <li>
+                    <code>width</code>:
+                    تحدد عرض الصورة.
+                </li>
+            </ul>
+
+            <h3>إضافة صورة من الإنترنت</h3>
+
+            <p>
+                يعرض المثال التالي شعار HTML5 من موقع خارجي،
+                بشرط توفر اتصال بالإنترنت وبقاء الصورة متاحة.
+            </p>
+
+            <img
+                src="https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png"
+                alt="شعار HTML5"
+                width="150"
+            >
+        </section>
+
+        <!-- فتح الرابط في تبويب جديد -->
+        <section>
+            <h2>ثالثاً: فتح الرابط في نافذة جديدة</h2>
+
+            <p>
+                يمكننا استخدام الخاصية
+                <code>target="_blank"</code>
+                لفتح الرابط في تبويب جديد.
+            </p>
+
+            <pre dir="ltr"><code>&lt;a href="https://www.w3schools.com/html/"
+target="_blank"
+rel="noopener noreferrer"&gt;
+تعلم HTML
+&lt;/a&gt;</code></pre>
+
+            <h3>جرّبي المثال</h3>
+
+            <p>
+                <a
+                    href="https://www.w3schools.com/html/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    افتحي موقع تعلم HTML في تبويب جديد
+                </a>
+            </p>
+
+            <p>
+                نستخدم
+                <code>rel="noopener noreferrer"</code>
+                كإجراء أمان عند فتح بعض الروابط في تبويب جديد.
+            </p>
+        </section>
+
+        <!-- اختبار الفهم -->
+        <section>
+            <h2>رابعاً: اختبر فهمك</h2>
+
+            <h3>السؤال الأول</h3>
+
+            <p>ما العنصر المستخدم لإنشاء رابط؟</p>
+
+            <details>
+                <summary>عرض الإجابة</summary>
+                <p>الإجابة: <code>&lt;a&gt;</code></p>
+            </details>
+
+            <hr>
+
+            <h3>السؤال الثاني</h3>
+
+            <p>ما العنصر المستخدم لإضافة صورة؟</p>
+
+            <details>
+                <summary>عرض الإجابة</summary>
+                <p>الإجابة: <code>&lt;img&gt;</code></p>
+            </details>
+
+            <hr>
+
+            <h3>السؤال الثالث</h3>
+
+            <p>ما وظيفة الخاصية alt؟</p>
+
+            <details>
+                <summary>عرض الإجابة</summary>
+                <p>
+                    الإجابة: تقديم وصف بديل للصورة،
+                    والاستفادة منه عند تعذر عرضها أو عند استخدام
+                    قارئات الشاشة.
+                </p>
+            </details>
+        </section>
+
+        <!-- التنقل بين الدروس -->
+        <section>
+            <h2>تابعي رحلة التعلم</h2>
+
+            <p>
+                <a href="headings.html">
+                    الدرس السابق: العناوين والفقرات
+                </a>
+            </p>
+
+            <p>
+                <a href="list-table.html">
+                    الدرس التالي: القوائم والجداول
+                </a>
+            </p>
+
+            <p>
+                <a href="index.html">
+                    العودة إلى الصفحة الرئيسية
+                </a>
+            </p>
+        </section>
+
+    </main>
+
+    <!-- تذييل الموقع -->
+    <footer>
+        <p>جميع الحقوق محفوظة © CodeStart 2026</p>
+    </footer>
+
+</body>
+
+</html>

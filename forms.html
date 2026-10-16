@@ -1,0 +1,196 @@
+<!DOCTYPE html><html lang="ar" dir="rtl"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><title>النماذج | CodeStart</title>
+
+<link rel="stylesheet" href="assets/css/style.css">
+
+</head><body><!-- رأس الصفحة -->
+<header>
+    <div class="container">
+        <h1>CodeStart</h1>
+        <p>تعلّم HTML من الصفر خطوة بخطوة</p>
+    </div>
+</header>
+
+<!-- شريط التنقل -->
+<nav>
+    <div class="container">
+        <ul>
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="introduction.html">مقدمة HTML</a></li>
+            <li><a href="contact.html">اتصل بنا</a></li>
+            <li><a href="about.html">عن الموقع</a></li>
+            <li><a href="login.html">تسجيل الدخول</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- المحتوى الرئيسي -->
+<main class="container">
+
+    <section class="lesson-header">
+        <h1>درس النماذج في HTML</h1>
+        <p>تعلّمي كيفية إنشاء نماذج لإدخال بيانات المستخدم.</p>
+    </section>
+
+    <section class="lesson-content">
+
+        <h2>أولاً: نموذج تسجيل طالب</h2>
+
+        <p>
+            يتيح لنا النموذج جمع المعلومات من المستخدم،
+            مثل الاسم والبريد الإلكتروني والتخصص.
+        </p>
+
+        <form action="#" method="get">
+
+            <label for="fullname">الاسم الكامل:</label>
+            <br>
+
+            <input
+                type="text"
+                id="fullname"
+                name="fullname"
+                placeholder="اكتبي اسمك الكامل"
+                required
+            >
+
+            <br><br>
+
+            <label for="email">البريد الإلكتروني:</label>
+            <br>
+
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="example@email.com"
+                required
+            >
+
+            <br><br>
+
+            <label for="password">كلمة المرور:</label>
+            <br>
+
+            <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="أدخلي كلمة المرور"
+                required
+            >
+
+            <br><br>
+
+            <label for="specialization">التخصص:</label>
+            <br>
+
+            <select id="specialization" name="specialization" required>
+
+                <option value="">اختاري تخصصك</option>
+                <option value="statistics">الإحصاء</option>
+                <option value="computer-science">علوم الحاسوب</option>
+                <option value="mathematics">الرياضيات</option>
+
+            </select>
+
+            <br><br>
+
+            <p><strong>الجنس:</strong></p>
+
+            <input
+                type="radio"
+                id="female"
+                name="gender"
+                value="female"
+                required
+            >
+
+            <label for="female">أنثى</label>
+
+            <input
+                type="radio"
+                id="male"
+                name="gender"
+                value="male"
+            >
+
+            <label for="male">ذكر</label>
+
+            <br><br>
+
+            <input
+                type="checkbox"
+                id="agreement"
+                name="agreement"
+                required
+            >
+
+            <label for="agreement">
+                أوافق على الشروط والأحكام.
+            </label>
+
+            <br><br>
+
+            <button type="submit">تسجيل</button>
+
+            <button type="reset">مسح البيانات</button>
+
+        </form>
+
+        <hr>
+
+        <h2>ثانياً: أهم عناصر النماذج</h2>
+
+        <ul>
+            <li><code>form</code>: إنشاء نموذج.</li>
+            <li><code>label</code>: كتابة وصف للحقل.</li>
+            <li><code>input</code>: إدخال البيانات.</li>
+            <li><code>select</code>: إنشاء قائمة خيارات.</li>
+            <li><code>option</code>: إضافة خيار داخل القائمة.</li>
+            <li><code>button</code>: إنشاء زر.</li>
+            <li><code>textarea</code>: إدخال نص طويل.</li>
+        </ul>
+
+        <h2>ثالثاً: مثال على حقل نص طويل</h2>
+
+        <p>
+            نستخدم العنصر <code>textarea</code> عندما نريد
+            السماح للمستخدم بكتابة نص طويل أو ملاحظات.
+        </p>
+
+        <label for="message">اكتبي ملاحظاتك:</label>
+
+        <br><br>
+
+        <textarea
+            id="message"
+            name="message"
+            rows="5"
+            cols="30"
+            placeholder="اكتبي هنا..."
+        ></textarea>
+
+        <br><br>
+
+        <a href="lists-tables.html" class="btn">
+            الدرس السابق: القوائم والجداول
+        </a>
+
+        <br><br>
+
+        <a href="index.html" class="btn">
+            العودة إلى الصفحة الرئيسية
+        </a>
+
+    </section>
+
+</main>
+
+<!-- تذييل الصفحة -->
+<footer>
+    <p>جميع الحقوق محفوظة &copy; 2026 CodeStart</p>
+</footer>
+
+</body></html>

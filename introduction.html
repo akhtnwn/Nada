@@ -1,58 +1,149 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-
-<head>
+<!DOCTYPE html><html lang="ar" dir="rtl"><head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>مقدمة HTML | CodeStart</title>
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><title>مقدمة HTML | CodeStart</title>
 
-<body>
+<link rel="stylesheet" href="assets/css/style.css">
 
-    <h1>مقدمة عن لغة HTML</h1>
+</head><body><!-- رأس الموقع -->
+<header>
+    <h1>CodeStart</h1>
+    <p>رحلتك لتعلم HTML تبدأ من هنا!</p>
 
+    <!-- قائمة التنقل -->
+    <nav>
+        <a href="index.html">الرئيسية</a>
+        <a href="login.html">تسجيل الدخول</a>
+        <a href="register.html">إنشاء حساب</a>
+        <a href="about.html">عن الموقع</a>
+        <a href="contact.html">اتصل بنا</a>
+    </nav>
+</header>
+
+<!-- المحتوى الرئيسي -->
+<main>
+
+    <!-- عنوان الدرس -->
+    <div class="lesson-header">
+        <h1>📘 مقدمة عن لغة HTML</h1>
+
+        <p>
+            مرحبًا بك في الدرس الأول من دروس HTML!
+            هيا نبدأ رحلتنا في تعلم تصميم صفحات الويب.
+        </p>
+    </div>
+
+    <!-- محتوى الدرس -->
+    <div class="lesson-content">
+
+        <section>
+            <h2>ما هي HTML؟</h2>
+
+            <p>
+                HTML هي لغة ترميز النص التشعبي،
+                وتُستخدم لإنشاء هيكل صفحات الويب.
+                فهي تحدد العناصر الموجودة في الصفحة،
+                مثل العناوين والفقرات والصور والروابط.
+            </p>
+        </section>
+
+        <section>
+            <h2>ماذا تعني HTML؟</h2>
+
+            <p>
+                HTML اختصار للعبارة الإنجليزية:
+            </p>
+
+            <p dir="ltr" style="text-align: center; font-weight: bold;">
+                HyperText Markup Language
+            </p>
+
+            <p>
+                ومعناها باللغة العربية:
+                لغة ترميز النص التشعبي.
+            </p>
+        </section>
+
+        <section>
+            <h2>ماذا يمكننا أن نفعل باستخدام HTML؟</h2>
+
+            <ul>
+                <li>إنشاء العناوين والفقرات.</li>
+                <li>إضافة الصور إلى صفحات الويب.</li>
+                <li>إنشاء الروابط بين الصفحات.</li>
+                <li>إنشاء القوائم والجداول.</li>
+                <li>إنشاء النماذج لإدخال البيانات.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>مثال بسيط</h2>
+
+            <p>
+                الكود التالي ينشئ عنوانًا وفقرة في صفحة الويب:
+            </p>
+
+            <pre><code>&lt;h1&gt;مرحباً بالعالم&lt;/h1&gt;
+
+<p>هذه أول صفحة ويب لي.</p></code></pre>
+
+            <h3>شرح المثال</h3>
+
+            <ul>
+                <li>
+                    <code>&lt;h1&gt;</code>
+                    تُستخدم لإنشاء عنوان رئيسي.
+                </li>
+
+                <li>
+                    <code>&lt;p&gt;</code>
+                    تُستخدم لإنشاء فقرة نصية.
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>ماذا تعلمنا في هذا الدرس؟</h2>
+
+            <ul>
+                <li>تعرفنا على معنى HTML.</li>
+                <li>عرفنا دور HTML في إنشاء صفحات الويب.</li>
+                <li>تعلمنا بعض الاستخدامات الأساسية للغة.</li>
+                <li>شاهدنا مثالًا بسيطًا على كتابة كود HTML.</li>
+            </ul>
+
+            <p>
+                أحسنت! 🎉 انتهيت من الدرس الأول.
+                استعد للانتقال إلى الدرس التالي.
+            </p>
+        </section>
+
+    </div>
+
+    <!-- التنقل بين الدروس -->
+    <div class="lesson-navigation">
+
+        <a href="index.html" class="lesson-button">
+            🏠 الصفحة الرئيسية
+        </a>
+
+        <a href="basics.html" class="lesson-button">
+            الدرس التالي: أساسيات HTML ←
+        </a>
+
+    </div>
+
+</main>
+
+<!-- تذييل الموقع -->
+<footer>
     <p>
-        مرحباً بك في أول. in.  درس من دروس HTML!
+        <a href="index.html">الرئيسية</a> |
+        <a href="about.html">عن الموقع</a> |
+        <a href="contact.html">اتصل بنا</a>
     </p>
 
-    <h2>ما هي HTML؟</h2>
-
-    <p>
-        HTML هي لغة ترميز النص التشعبي،
-        وتُستخدم لإنشاء هيكل صفحات الويب.
-    </p>
-
-    <h2>ماذا تعني HTML؟</h2>
-
-    <p>
-        HyperText Markup Language
-    </p>
-
-    <h2>ماذا يمكننا أن نفعل باستخدام HTML؟</h2>
-
-    <ul>
-        <li>إنشاء العناوين والفقرات.</li>
-        <li>إضافة الصور إلى صفحات الويب.</li>
-        <li>إنشاء الروابط بين الصفحات.</li>
-        <li>إنشاء القوائم والجداول.</li>
-        <li>إنشاء النماذج.</li>
-    </ul>
-
-    <h2>مثال بسيط</h2>
-
-    <p>الكود التالي ينشئ عنواناً وفقرة:</p>
-
-    <pre>
-&lt;h1&gt;مرحباً بالعالم&lt;/h1&gt;
-&lt;p&gt;هذه أول صفحة ويب لي.&lt;/p&gt;
-    </pre>
-
-    <p>
-        انتهى الدرس الأول. استعد للدرس التالي!
-    </p>
-
-    <a href="index.html">العودة إلى الصفحة الرئيسية</a>
+    <p>جميع الحقوق محفوظة © CodeStart 2026</p>
+</footer>
 
 </body>
-
 </html>
