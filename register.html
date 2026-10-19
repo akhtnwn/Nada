@@ -42,7 +42,8 @@
             في موقع CodeStart.
         </p>
 
-        <form action="#" method="post">
+        <!-- نموذج التسجيل -->
+        <form id="registerForm">
 
             <label for="fullname">الاسم الكامل:</label>
             <br>
@@ -100,13 +101,13 @@
 
             <br><br>
 
-            <label for="confirm-password">تأكيد كلمة المرور:</label>
+            <label for="confirmPassword">تأكيد كلمة المرور:</label>
             <br>
 
             <input
                 type="password"
-                id="confirm-password"
-                name="confirm-password"
+                id="confirmPassword"
+                name="confirmPassword"
                 placeholder="أعيدي كتابة كلمة المرور"
                 autocomplete="new-password"
                 required
@@ -122,13 +123,11 @@
                 name="specialization"
                 required
             >
-
                 <option value="">اختاري تخصصك</option>
                 <option value="statistics">الإحصاء</option>
                 <option value="computer-science">علوم الحاسوب</option>
                 <option value="mathematics">الرياضيات</option>
                 <option value="other">تخصص آخر</option>
-
             </select>
 
             <br><br>
@@ -174,4 +173,8 @@
     <p>جميع الحقوق محفوظة &copy; 2026 CodeStart</p>
 </footer>
 
-</body></html>
+<!-- ربط JavaScript -->
+<script src="assets/js/script.js"></script>
+
+</body>
+</html>
