@@ -1,0 +1,789 @@
+/* =========================================
+   CodeStart - Main Stylesheet
+   تنسيق الموقع بالكامل
+   ========================================= */
+
+/* ===== 1. التنسيقات العامة ===== */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #1f2937;
+    background-color: #f3f6fb;
+    direction: rtl;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    line-height: 1.5;
+}
+
+h1 {
+    color: #1e40af;
+}
+
+h2 {
+    color: #1e40af;
+    margin-top: 0;
+}
+
+h3 {
+    color: #1d4ed8;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+a {
+    color: #1e40af;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #0891b2;
+    text-decoration: underline;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #e5e7eb;
+    margin: 25px 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+
+/* ===== 2. رأس الموقع ===== */
+
+body > header {
+    background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+    border-radius: 0 0 18px 18px;
+}
+
+body > header h1 {
+    color: white;
+    font-size: 36px;
+    margin: 0 0 8px;
+}
+
+body > header p {
+    color: white;
+    font-size: 17px;
+    margin: 5px 0 15px;
+}
+
+body > header hr,
+body > hr {
+    display: none;
+}
+
+/* شعار الصفحات التي تستخدم container */
+
+header .logo {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* قائمة التنقل */
+
+body > header nav,
+header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+body > header nav a,
+header nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 14px;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+
+body > header nav a:hover,
+header nav a:hover {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.2);
+    text-decoration: none;
+}
+
+
+/* ===== 3. المحتوى الرئيسي ===== */
+
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+body > main {
+    padding: 0;
+}
+
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border: 1px solid #e5e7eb;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.3s;
+}
+
+section:hover {
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.09);
+}
+
+section h2 {
+    color: #1e40af;
+    margin-bottom: 15px;
+}
+
+section p {
+    line-height: 1.9;
+}
+
+body > main > hr {
+    display: none;
+}
+
+
+/* ===== 4. الصفحة الرئيسية ===== */
+
+body > main > section ul {
+    padding-right: 25px;
+    list-style: disc;
+}
+
+body > main > section li {
+    margin-bottom: 12px;
+}
+
+body > main > section > a {
+    display: inline-block;
+    background-color: #1e40af;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 8px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+body > main > section > a:hover {
+    background-color: #1e3a8a;
+    color: white;
+}
+
+
+/* ===== 5. القوائم ===== */
+
+ul,
+ol {
+    padding-right: 30px;
+    margin: 15px 0;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+section ul li a {
+    line-height: 1.8;
+}
+
+
+/* ===== 6. الأزرار ===== */
+
+button,
+input[type="submit"],
+input[type="button"],
+input[type="reset"],
+.button {
+    display: inline-block;
+    background-color: #1e40af;
+    color: white;
+    border: none;
+    padding: 11px 22px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: inherit;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+.button:hover {
+    background-color: #1e3a8a;
+    color: white;
+}
+
+
+/* ===== 7. الحقول والنماذج ===== */
+
+form {
+    width: 100%;
+    max-width: 650px;
+    margin: 20px auto;
+}
+
+label {
+    display: block;
+    margin: 12px 0 6px;
+    font-weight: bold;
+    color: #374151;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+input[type="date"],
+input[type="search"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    background-color: white;
+    color: #1f2937;
+    font-family: inherit;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+    margin-left: 6px;
+}
+
+input[type="file"] {
+    max-width: 100%;
+    margin: 10px 0;
+}
+
+form button,
+form input[type="submit"],
+form input[type="reset"] {
+    margin: 8px 5px 8px 0;
+}
+
+
+/* ===== 8. بطاقات المقالات ===== */
+
+article {
+    background-color: white;
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04);
+}
+
+article h2,
+article h3 {
+    margin-top: 0;
+}
+
+
+/* ===== 9. تنسيق صفحات الدروس ===== */
+
+.lesson-header {
+    background: linear-gradient(135deg, #1e40af, #3b82f6);
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    margin-bottom: 25px;
+    border-radius: 15px;
+}
+
+.lesson-header h1 {
+    color: white;
+    margin-top: 0;
+}
+
+.lesson-header p {
+    color: white;
+}
+
+.lesson-content {
+    background-color: white;
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.lesson-content h2 {
+    border-right: 5px solid #3b82f6;
+    padding-right: 12px;
+    margin-top: 30px;
+}
+
+.lesson-content h3 {
+    margin-top: 22px;
+}
+
+.lesson-content p {
+    line-height: 2;
+}
+
+.lesson-content ul,
+.lesson-content ol {
+    padding-right: 30px;
+}
+
+.lesson-content li {
+    margin-bottom: 10px;
+}
+
+
+/* ===== 10. تنسيق الأكواد ===== */
+
+code {
+    background-color: #eff6ff;
+    color: #1e40af;
+    padding: 3px 7px;
+    border-radius: 5px;
+    direction: ltr;
+    unicode-bidi: embed;
+}
+
+pre {
+    background-color: #172554;
+    color: #f8fafc;
+    padding: 18px;
+    border-radius: 10px;
+    overflow-x: auto;
+    direction: ltr;
+    text-align: left;
+    line-height: 1.7;
+    white-space: pre;
+}
+
+pre code {
+    background-color: transparent;
+    color: inherit;
+    padding: 0;
+}
+
+
+/* ===== 11. الجداول ===== */
+
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    margin: 20px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    margin: 15px 0;
+}
+
+caption {
+    color: #1e40af;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px;
+}
+
+th,
+td {
+    border: 1px solid #cbd5e1;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #1e40af;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #eff6ff;
+}
+
+tbody tr:hover {
+    background-color: #dbeafe;
+}
+
+
+/* ===== 12. أسئلة الاختبارات ===== */
+
+.quiz-question {
+    background-color: #f8fafc;
+    border-right: 4px solid #3b82f6;
+    padding: 18px;
+    margin: 18px 0;
+    border-radius: 8px;
+}
+
+.quiz-question h3 {
+    margin-top: 0;
+    color: #1e40af;
+}
+
+.quiz-question label {
+    font-weight: normal;
+}
+
+
+/* ===== 13. أزرار التنقل بين الدروس ===== */
+
+.lesson-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.lesson-button,
+.home-link {
+    display: inline-block;
+    background-color: #1e40af;
+    color: white;
+    padding: 11px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.lesson-button:hover,
+.home-link:hover {
+    background-color: #1e3a8a;
+    color: white;
+    text-decoration: none;
+}
+
+
+/* ===== 14. تنسيق الروابط والأقسام ===== */
+
+section a:not(.lesson-button):not(.home-link) {
+    overflow-wrap: anywhere;
+}
+
+section img {
+    display: block;
+    margin: 15px auto;
+}
+
+section blockquote {
+    background-color: #eff6ff;
+    border-right: 4px solid #3b82f6;
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+
+/* ===== 15. تذييل الموقع ===== */
+
+body > footer {
+    background-color: #172554;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+    margin-top: 40px;
+}
+
+body > footer p {
+    color: white;
+    margin: 8px 0;
+}
+
+body > footer a {
+    color: #bfdbfe;
+    margin: 0 5px;
+    text-decoration: none;
+}
+
+body > footer a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+
+/* ===== 16. تنسيق صفحة تسجيل الدخول ===== */
+
+.login-container {
+    max-width: 500px;
+    margin: 35px auto;
+    padding: 25px;
+    background-color: white;
+    border-radius: 15px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+}
+
+.login-container h1,
+.login-container h2 {
+    text-align: center;
+    color: #1e40af;
+}
+
+.login-container form {
+    margin-top: 20px;
+}
+
+
+/* ===== 17. تنسيق صفحة إنشاء الحساب ===== */
+
+.register-container {
+    max-width: 600px;
+    margin: 35px auto;
+    padding: 25px;
+    background-color: white;
+    border-radius: 15px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+}
+
+.register-container h1,
+.register-container h2 {
+    text-align: center;
+    color: #1e40af;
+}
+
+
+/* ===== 18. تنسيق صفحة اتصل بنا ===== */
+
+.contact-container {
+    max-width: 750px;
+    margin: 35px auto;
+    padding: 25px;
+    background-color: white;
+    border-radius: 15px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+}
+
+.contact-container h1,
+.contact-container h2 {
+    text-align: center;
+    color: #1e40af;
+}
+
+.contact-container form {
+    margin-top: 20px;
+}
+
+
+/* ===== 19. تحسين العرض على الهاتف ===== */
+
+@media (max-width: 768px) {
+
+    body {
+        font-size: 15px;
+    }
+
+    body > header {
+        padding: 22px 12px;
+    }
+
+    body > header h1 {
+        font-size: 30px;
+    }
+
+    header nav {
+        gap: 6px;
+    }
+
+    header nav a {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+
+    main {
+        width: 94%;
+        margin: 20px auto;
+    }
+
+    section {
+        padding: 18px;
+    }
+
+    .lesson-content {
+        padding: 18px;
+    }
+
+    .lesson-navigation {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .lesson-button,
+    .home-link {
+        text-align: center;
+    }
+
+    th,
+    td {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .login-container,
+    .register-container,
+    .contact-container {
+        width: 94%;
+        padding: 18px;
+    }
+}
+
+
+/* ===== 20. تحسين العرض على الشاشات الصغيرة ===== */
+
+@media (max-width: 400px) {
+
+    body > header h1 {
+        font-size: 26px;
+    }
+
+    body > header p {
+        font-size: 15px;
+    }
+
+    body > header nav {
+        flex-direction: column;
+    }
+
+    body > header nav a {
+        width: 100%;
+    }
+
+    section {
+        padding: 14px;
+    }
+
+    button,
+    input[type="submit"],
+    input[type="reset"] {
+        max-width: 100%;
+        font-size: 14px;
+    }
+}
+/* =====================================
+Hamburger Menu - CodeStart
+===================================== */
+
+/* تنسيق زر الهمبرقر */
+.hamburger {
+display: none;
+background: none;
+border: none;
+color: white;
+font-size: 30px;
+cursor: pointer;
+padding: 8px 12px;
+}
+
+/* تنسيق روابط القائمة */
+.nav-links {
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+/* تنسيق الهاتف */
+@media screen and (max-width: 768px) {
+
+nav .container {
+    position: relative;
+}
+
+/* إظهار زر الهمبرقر */
+.hamburger {
+    display: block;
+    margin-right: auto;
+}
+
+/* إخفاء القائمة في البداية */
+.nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #1e3a8a;
+    padding: 10px 0;
+}
+
+/* إظهار القائمة عند إضافة open */
+.nav-links.open {
+    display: flex;
+}
+
+/* تنسيق الروابط */
+.nav-links li {
+    width: 100%;
+    text-align: right;
+}
+
+.nav-links li a {
+    display: block;
+    padding: 12px 16px;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links li a:hover {
+    background-color: #1e40af;
+}
+
+}
